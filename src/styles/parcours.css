@@ -1,0 +1,146 @@
+.route-section {
+  padding: clamp(4rem, 8vw, 7rem) 1.5rem;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(245, 234, 216, 0.18),
+      transparent 32rem
+    ),
+    linear-gradient(135deg, var(--color-deep-blue), #17465c);
+}
+
+.route-content {
+  width: min(1700px, 100%);
+  margin: 0 auto;
+}
+
+.route-layout {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+.route-text {
+  color: var(--color-cream);
+}
+
+.route-section .section-kicker {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+
+  color: var(--color-yellow);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.route-section .section-title {
+  margin: 0;
+
+  color: var(--color-cream);
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.route-section .section-intro {
+  margin: 1.3rem 0 0;
+
+  color: rgba(255, 248, 236, 0.9);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.7;
+}
+
+.route-note {
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem;
+
+  color: var(--color-deep-blue);
+  background: rgba(255, 248, 236, 0.9);
+  border-radius: 1rem;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.route-info-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+
+  display: grid;
+  gap: 0.8rem;
+
+  list-style: none;
+}
+
+.route-info-item {
+  padding: 1rem 1.1rem;
+
+  background: rgba(255, 248, 236, 0.12);
+  border: 1px solid rgba(255, 248, 236, 0.18);
+  border-radius: 1rem;
+
+  color: rgba(255, 248, 236, 0.95);
+  line-height: 1.5;
+}
+
+.route-info-item b {
+  color: var(--color-yellow);
+}
+
+.route-map-card {
+  width: 100%;
+  align-self: center;
+
+  padding: clamp(0.5rem, 2vw, 1.2rem);
+
+  background: rgba(255, 248, 236, 0.92);
+  border-radius: 2rem;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
+.route-map-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: clamp(1rem, 3vw, 3.125rem);
+
+  object-fit: contain;
+  border-radius: 1.4rem;
+}
+
+.route-map-caption {
+  margin: 0.6rem 0 clamp(1rem, 3vw, 3.125rem);
+
+  color: var(--color-deep-blue);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .route-section {
+    padding: 4rem 1rem;
+  }
+
+  .route-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .route-text {
+    text-align: left;
+  }
+
+  .route-map-card {
+    border-radius: 1.5rem;
+  }
+
+  .route-map-card img {
+    border-radius: 1rem;
+    margin-top: 0;
+  }
+  .route-map-caption {
+    margin-bottom: 0;
+  }
+}

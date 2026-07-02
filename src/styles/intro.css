@@ -1,0 +1,46 @@
+.intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100dvh;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--color-cream);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition:
+    opacity 1.8s ease,
+    visibility 1.8s ease;
+}
+
+.intro-overlay.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.intro-logo {
+  width: clamp(280px, 46vw, 720px);
+  height: auto;
+  border-radius: 50%;
+
+  transform: scale(1);
+  transition: transform 1.8s ease;
+}
+
+.intro-overlay.is-hidden .intro-logo {
+  transform: scale(0.96);
+}
+
+@media (max-width: 640px) {
+  .intro-logo {
+    width: min(82vw, 360px);
+  }
+}

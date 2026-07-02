@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tharon’Tchou — Petit train touristique à Tharon-Plage</title>
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <nav class="header-actions" id="header-actions">
+        <div class="header-actions-top">
+          <div class="menu-wrapper" id="menu-wrapper">
+            <button
+              class="button-menu"
+              id="button-menu"
+              type="button"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="menu-dropdown"
+            >
+              <svg class="icon-menu" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <a href="URL_BILLETTERIE" class="ticket-link" id="ticket-link"
+            >Réserver mon billet</a
+          >
+        </div>
+
+        <div class="menu-dropdown" id="menu-dropdown">
+          <a class="menu-dropdown-link" href="#experience">L’expérience</a>
+          <a class="menu-dropdown-link" href="#parcours">Le parcours</a>
+          <a class="menu-dropdown-link" href="#tarifs">Tarifs</a>
+          <a class="menu-dropdown-link" href="#footer">Infos pratiques</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="intro-overlay" id="intro-overlay">
+        <img
+          src="/src/assets/logo/Logo-Tharon-Tchou.svg"
+          alt="Tharon’Tchou"
+          class="intro-logo"
+        />
+      </div>
+      <section id="hero" class="hero">
+        <div class="hero-bg-wrapper" id="hero-bg">
+          <img
+            src="/src/assets/images/hero-visuel.png"
+            alt=""
+            class="hero-bg-img"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="hero-content" id="hero-content">
+          <h1 class="hero-title">
+            Et si Tharon-Plage vous racontait ses secrets ?
+          </h1>
+          <p class="hero-p">
+            Montez à bord du Tharon’Tchou pour une balade familiale et
+            immersive, où les voix du bord de mer, des habitants et des
+            souvenirs locaux donnent vie aux lieux emblématiques de la station.
+          </p>
+          <div class="hero-action" id="hero-action">
+            <a class="hero-primary-btn" href="URL_BILLETTERIE"
+              >Réserver mon billet</a
+            >
+            <a class="hero-secondary-btn" href="#parcours"
+              >Découvrir le parcours</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="quick-info" class="quick-info">
+        <div class="quick-info-content" id="quick-info-content">
+          <ul class="quick-info-list">
+            <li class="quick-info-item">Balade audio-guidée</li>
+            <li class="quick-info-item">Environ 45min</li>
+            <li class="quick-info-item">Départ à Tharon-Plage</li>
+            <li class="quick-info-item">Idéal familles et vacanciers</li>
+            <li class="quick-info-item">Billets en ligne</li>
+          </ul>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <div class="experience-content" id="experience-content">
+          <h2 class="experience-title" id="experience-title">
+            Un petit voyage conté au cœur de Tharon-Plage
+          </h2>
+          <p class="experience-text" id="experience-text">
+            À bord du Tharon’Tchou, Tharon-Plage ne se visite pas seulement :
+            elle se raconte. Au fil du parcours, les voix du bord de mer, les
+            souvenirs locaux et les personnages de la station donnent vie aux
+            lieux traversés.
+            <br />
+            Une balade familiale, douce et immersive, pensée pour regarder,
+            écouter et redécouvrir la station autrement.
+          </p>
+          <div class="experience-showcase">
+            <div class="carousel-wrapper" id="experience-carousel">
+              <div class="carousel-content" id="carousel-content">
+                <article class="experience-card is-active">
+                  <div class="experience-card-image">
+                    <img
+                      src="/src/assets/images/experience.png"
+                      alt="description"
+                    />
+                  </div>
+                  <div class="experience-card-body">
+                    <span class="experience-card-kicker">Expérience</span>
+                    <h3>Vivre une vraie expérience</h3>
+                    <p>
+                      Une balade immersive où le trajet devient un moment à part
+                      entière, entre découverte, écoute et plaisir de se laisser
+                      porter.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="experience-card">
+                  <div class="experience-card-image">
+                    <img
+                      src="/src/assets/images/famille.png"
+                      alt="description"
+                    />
+                  </div>
+                  <div class="experience-card-body">
+                    <span class="experience-card-kicker">Famille</span>
+                    <h3>Partager un moment en famille</h3>
+                    <p>
+                      Un format doux et accessible, pensé pour les enfants, les
+                      parents, les vacanciers et les habitants curieux.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="experience-card">
+                  <div class="experience-card-image">
+                    <img
+                      src="/src/assets/images/decouverte.png"
+                      alt="description"
+                    />
+                  </div>
+                  <div class="experience-card-body">
+                    <span class="experience-card-kicker">Découverte</span>
+                    <h3>Découvrir Tharon-Plage autrement</h3>
+                    <p>
+                      Une autre manière de parcourir la station, de voir les
+                      lieux familiers autrement et de profiter du bord de mer
+                      sans reprendre la voiture.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="experience-card">
+                  <div class="experience-card-image">
+                    <img src="/src/assets/images/audio.png" alt="description" />
+                  </div>
+                  <div class="experience-card-body">
+                    <span class="experience-card-kicker">Audio-guide</span>
+                    <h3>Un voyage à écouter autant qu’à regarder</h3>
+                    <p>
+                      Voix, ambiances et anecdotes locales accompagnent le
+                      parcours pour donner vie aux paysages traversés.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  class="carousel-btn"
+                  id="carousel-prev"
+                  type="button"
+                  aria-label="Voir la carte précédente"
+                >
+                  ←
+                </button>
+                <button
+                  class="carousel-btn"
+                  id="carousel-next"
+                  type="button"
+                  aria-label="Voir la carte suivante"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="parcours" class="route-section">
+        <div class="route-content" id="route-content">
+          <div class="route-layout">
+            <div class="route-text">
+              <span class="section-kicker">Le parcours</span>
+
+              <h2 class="section-title">
+                Un circuit touristique pour découvrir Tharon-Plage sans
+                reprendre la voiture
+              </h2>
+
+              <p class="section-intro">
+                À bord du Tharon’Tchou, profitez d’une balade douce pour
+                découvrir les plages, les commerces, les animations et les lieux
+                emblématiques de Tharon-Plage.
+              </p>
+
+              <p class="route-note">
+                Le parcours détaillé et les points de départ seront confirmés
+                avant l’ouverture de la saison.
+              </p>
+
+              <ul class="route-info-list">
+                <li class="route-info-item"><b>Durée :</b> environ 1 heure</li>
+                <li class="route-info-item"><b>Départ :</b> Tharon-Plage</li>
+                <li class="route-info-item">
+                  <b>Parcours :</b> plages, commerces, animations et lieux
+                  emblématiques
+                </li>
+                <li class="route-info-item">
+                  <b>Expérience :</b> balade audio-guidée avec anecdotes locales
+                </li>
+              </ul>
+            </div>
+
+            <div class="route-map-card">
+              <img
+                src="./src/assets/images/carte-tharon-tchou.png"
+                alt="Carte du trajet du Tharon’Tchou"
+              />
+
+              <p class="route-map-caption">Carte indicative du parcours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tarifs" class="pricing-section">
+        <div class="pricing-content">
+          <div class="section-heading pricing-heading">
+            <span class="section-kicker">Tarifs</span>
+
+            <h2 class="section-title">
+              Choisissez la formule qui vous convient
+            </h2>
+
+            <p class="section-intro">
+              Billet simple, pass journée ou pass semaine : profitez du
+              Tharon’Tchou selon votre programme et votre rythme.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <span class="price-label">Billet simple</span>
+              <h3>Adulte</h3>
+              <p class="price-amount">7 €</p>
+              <p class="price-note">Pour une balade audio-guidée.</p>
+            </article>
+
+            <article class="price-card price-card-featured">
+              <span class="price-label">Pass journée</span>
+              <h3>Adulte</h3>
+              <p class="price-amount">9 €</p>
+              <p class="price-note">
+                Idéal pour monter et redécouvrir le parcours dans la journée.
+              </p>
+            </article>
+
+            <article class="price-card">
+              <span class="price-label">Pass semaine</span>
+              <h3>Adulte</h3>
+              <p class="price-amount">24 €</p>
+              <p class="price-note">
+                Une formule pratique pour les séjours à Tharon-Plage.
+              </p>
+            </article>
+
+            <article class="price-card">
+              <span class="price-label">Billet simple</span>
+              <h3>Enfant</h3>
+              <p class="price-amount">5 €</p>
+              <p class="price-note">
+                Tarif enfant pour profiter du trajet en famille.
+              </p>
+            </article>
+
+            <article class="price-card price-card-soft">
+              <span class="price-label">Tout-petits</span>
+              <h3>Moins de 3 ans</h3>
+              <p class="price-amount">Gratuit</p>
+              <p class="price-note">
+                Sous réserve des conditions précisées en billetterie.
+              </p>
+            </article>
+          </div>
+
+          <div class="pricing-action">
+            <p>
+              Tarif réduit : -10 % sur présentation d’un justificatif. Le
+              parcours détaillé, les horaires et les conditions d’embarquement
+              seront confirmés avant l’ouverture.
+            </p>
+
+            <a href="URL_BILLETTERIE" class="pricing-button">
+              Réserver mon billet
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img
+            src="/src/assets/logo/Logo-Tharon-Tchou.svg"
+            alt="Logo Tharon’Tchou"
+            class="footer-logo"
+          />
+
+          <p>
+            Le petit train touristique de Tharon-Plage. Une balade familiale,
+            contée et audio-guidée pour découvrir la station autrement.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <h2 class="footer-title">Découvrir</h2>
+
+          <a href="#experience">L’expérience</a>
+          <a href="#parcours">Le parcours</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#">FAQ</a>
+        </nav>
+
+        <div class="footer-nav">
+          <h2 class="footer-title">Informations</h2>
+
+          <a href="#">Devenir partenaire</a>
+          <a href="#">Nous contacter</a>
+          <a href="#">Mentions légales</a>
+          <a href="#">CGV</a>
+        </div>
+
+        <div class="footer-cta">
+          <h2 class="footer-title">Billetterie</h2>
+
+          <p>
+            Réservez votre billet en ligne et préparez votre balade à bord du
+            Tharon’Tchou.
+          </p>
+
+          <a href="URL_BILLETTERIE" class="footer-button">
+            Réserver mon billet
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Tharon’Tchou. Tous droits réservés.</p>
+        <p>
+          Site vitrine — informations susceptibles d’être mises à jour avant
+          l’ouverture.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
