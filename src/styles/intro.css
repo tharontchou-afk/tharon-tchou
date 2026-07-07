@@ -9,7 +9,7 @@
   display: grid;
   place-items: center;
 
-  background: var(--color-cream);
+  background: var(--color-bg);
 
   opacity: 1;
   visibility: visible;

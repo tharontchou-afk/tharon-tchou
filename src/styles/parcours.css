@@ -7,7 +7,7 @@
       rgba(245, 234, 216, 0.18),
       transparent 32rem
     ),
-    linear-gradient(135deg, var(--color-deep-blue), #17465c);
+    linear-gradient(135deg, var(--color-brand-dark), #17465c);
 }
 
 .route-content {
@@ -22,14 +22,14 @@
   align-items: center;
 }
 .route-text {
-  color: var(--color-cream);
+  color: var(--color-bg);
 }
 
 .route-section .section-kicker {
   display: inline-block;
   margin-bottom: 0.8rem;
 
-  color: var(--color-yellow);
+  color: var(--color-accent-yellow);
   font-size: 0.8rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
 .route-section .section-title {
   margin: 0;
 
-  color: var(--color-cream);
+  color: var(--color-bg);
   font-size: clamp(2.2rem, 4vw, 3.8rem);
   line-height: 1.08;
   font-weight: 800;
@@ -48,7 +48,7 @@
 .route-section .section-intro {
   margin: 1.3rem 0 0;
 
-  color: rgba(255, 248, 236, 0.9);
+  color: var(--color-surface-alt);
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   line-height: 1.7;
 }
@@ -57,8 +57,8 @@
   margin: 1rem 0 0;
   padding: 1rem 1.1rem;
 
-  color: var(--color-deep-blue);
-  background: rgba(255, 248, 236, 0.9);
+  color: var(--color-brand-dark);
+  background: var(--color-surface-alt);
   border-radius: 1rem;
 
   font-size: 0.95rem;
@@ -77,16 +77,16 @@
 .route-info-item {
   padding: 1rem 1.1rem;
 
-  background: rgba(255, 248, 236, 0.12);
-  border: 1px solid rgba(255, 248, 236, 0.18);
+  background: var(--color-on-bg);
+  border: var(--border-soft);
   border-radius: 1rem;
 
-  color: rgba(255, 248, 236, 0.95);
+  color: var(--color-surface-alt);
   line-height: 1.5;
 }
 
 .route-info-item b {
-  color: var(--color-yellow);
+  color: var(--color-accent-yellow);
 }
 
 .route-map-card {
@@ -95,9 +95,9 @@
 
   padding: clamp(0.5rem, 2vw, 1.2rem);
 
-  background: rgba(255, 248, 236, 0.92);
+  background: var(--color-bg-filter);
   border-radius: 2rem;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+  box-shadow: var(--shadow-soft);
 }
 
 .route-map-card img {
@@ -113,7 +113,7 @@
 .route-map-caption {
   margin: 0.6rem 0 clamp(1rem, 3vw, 3.125rem);
 
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
   font-size: 0.85rem;
   line-height: 1.4;
   text-align: center;

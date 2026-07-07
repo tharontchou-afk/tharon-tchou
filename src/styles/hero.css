@@ -29,11 +29,11 @@
   height: auto;
   padding: 2rem;
   text-align: center;
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
   border-radius: 2rem;
-  background: rgba(255, 248, 236, 0.62);
+  background: var(--color-on-img-bg);
   backdrop-filter: blur(1px);
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: var(--border-light);
 }
 
 .hero-title {
@@ -75,21 +75,28 @@
 }
 
 .hero-primary-btn {
-  background-color: var(--color-yellow);
+  background-color: var(--color-accent-yellow);
   color: #fff;
 }
 
 .hero-primary-btn:hover {
-  background-color: var(--color-sand);
-  color: var(--color-yellow);
+  background-color: var(--color-surface-alt);
+  color: var(--color-accent-yellow);
 }
 
 .hero-secondary-btn {
-  background-color: var(--color-green);
+  background-color: var(--color-accent-green);
   color: #fff;
 }
 
 .hero-secondary-btn:hover {
-  background-color: var(--color-sand);
-  color: var(--color-green);
+  background-color: var(--color-surface-alt);
+  color: var(--color-accent-green);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 100svh;
+    padding-top: 90px;
+  }
 }

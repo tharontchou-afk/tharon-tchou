@@ -4,12 +4,12 @@
   background:
     radial-gradient(
       circle at top right,
-      rgba(245, 234, 216, 0.14),
+      var(--color-surface-alt-gradient),
       transparent 28rem
     ),
-    var(--color-deep-blue);
+    var(--color-brand-dark);
 
-  color: var(--color-cream);
+  color: var(--color-bg);
 }
 
 .footer-content {
@@ -25,7 +25,7 @@
 .footer-cta p {
   margin: 1rem 0 0;
 
-  color: rgba(255, 248, 236, 0.78);
+  color: var(--color-surface-alt);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -35,13 +35,13 @@
   height: auto;
 
   border-radius: 50%;
-  background: var(--color-cream);
+  background: var(--color-bg);
 }
 
 .footer-title {
   margin: 0 0 1rem;
 
-  color: var(--color-yellow);
+  color: var(--color-accent-yellow);
   font-size: 0.85rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -57,7 +57,7 @@
   width: fit-content;
   margin-bottom: 0.65rem;
 
-  color: rgba(255, 248, 236, 0.82);
+  color: var(--color-surface-alt);
   font-size: 0.95rem;
 
   transition:
@@ -66,7 +66,7 @@
 }
 
 .footer-nav a:hover {
-  color: var(--color-yellow);
+  color: var(--color-accent-yellow);
   transform: translateX(3px);
 }
 
@@ -81,13 +81,13 @@
 
   border-radius: 999px;
 
-  background: var(--color-yellow);
-  color: var(--color-deep-blue);
+  background: var(--color-accent-yellow);
+  color: var(--color-brand-dark);
 
   font-weight: 900;
   white-space: nowrap;
 
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+  box-shadow: var(--shadow-soft);
 
   transition:
     transform 0.2s ease,
@@ -96,7 +96,7 @@
 
 .footer-button:hover {
   transform: translateY(-2px);
-  background: var(--color-cream);
+  background: var(--color-bg);
 }
 
 .footer-bottom {
@@ -108,9 +108,9 @@
   justify-content: space-between;
   gap: 1rem;
 
-  border-top: 1px solid rgba(255, 248, 236, 0.16);
+  border-top: var(--border-soft);
 
-  color: rgba(255, 248, 236, 0.62);
+  color: var(--color-soft);
   font-size: 0.85rem;
 }
 

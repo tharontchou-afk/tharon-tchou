@@ -1,6 +1,6 @@
 .pricing-section {
   padding: clamp(4rem, 8vw, 7rem) 1.5rem;
-  background: var(--color-cream);
+  background: var(--color-bg);
 }
 
 .pricing-content {
@@ -18,7 +18,7 @@
   display: inline-block;
   margin-bottom: 0.8rem;
 
-  color: var(--color-green);
+  color: var(--color-accent-green);
   font-size: 0.8rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
 .pricing-section .section-title {
   margin: 0;
 
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
   font-size: clamp(2.2rem, 4vw, 3.8rem);
   line-height: 1.08;
   font-weight: 800;
@@ -37,7 +37,7 @@
 .pricing-section .section-intro {
   margin: 1.3rem auto 0;
 
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   line-height: 1.7;
 }
@@ -53,12 +53,12 @@
 .price-card {
   padding: clamp(1.5rem, 3vw, 2.25rem);
   grid-column: span 2;
-  background: var(--color-sand);
-  border: 1px solid rgba(18, 49, 66, 0.08);
+  background: var(--color-surface-alt);
+  border: var(--border-brand);
   border-radius: 1.75rem;
-  box-shadow: 0 18px 45px rgba(18, 49, 66, 0.08);
+  box-shadow: var(--shadow-brand-dark);
 
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
 
   transition:
     transform 0.2s ease,
@@ -70,14 +70,14 @@
 
 .price-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 24px 60px rgba(18, 49, 66, 0.14);
+  box-shadow: var(--shadow-brand-dark-hover);
 }
 
 .price-label {
   display: inline-block;
   margin-bottom: 1rem;
 
-  color: var(--color-green);
+  color: var(--color-accent-green);
   font-size: 0.75rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -98,33 +98,32 @@
   font-size: clamp(2.4rem, 4vw, 3.6rem);
   line-height: 1;
   font-weight: 900;
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
 }
 
 .price-note {
   margin: 1rem 0 0;
 
-  color: rgba(18, 49, 66, 0.78);
-  font-size: 0.95rem;
+  color: var(--color-text);
   line-height: 1.5;
 }
 
 .price-card-featured {
-  background: var(--color-deep-blue);
-  color: var(--color-cream);
+  background: var(--color-brand-dark);
+  color: var(--color-bg);
   transform: translateY(-0.5rem);
 }
 
 .price-card-featured .price-label {
-  color: var(--color-yellow);
+  color: var(--color-accent-yellow);
 }
 
 .price-card-featured .price-amount {
-  color: var(--color-yellow);
+  color: var(--color-accent-yellow);
 }
 
 .price-card-featured .price-note {
-  color: rgba(255, 248, 236, 0.82);
+  color: var(--color-surface-alt);
 }
 
 .price-card-featured:hover {
@@ -132,7 +131,7 @@
 }
 
 .price-card-soft {
-  background: rgba(255, 248, 236, 0.75);
+  background: var(--color-soft);
 }
 
 .pricing-action {
@@ -144,14 +143,14 @@
   justify-content: space-between;
   gap: 1.5rem;
 
-  background: rgba(245, 234, 216, 0.75);
+  background: var(--color-surface-alt);
   border-radius: 1.5rem;
 }
 
 .pricing-action p {
   margin: 0;
 
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -165,13 +164,13 @@
   justify-content: center;
 
   border-radius: 999px;
-  background: var(--color-red);
-  color: var(--color-cream);
+  background: var(--color-accent-red);
+  color: var(--color-bg);
 
   font-weight: 800;
   white-space: nowrap;
 
-  box-shadow: 0 14px 32px rgba(167, 53, 42, 0.24);
+  box-shadow: var(--shadow-red);
 
   transition:
     transform 0.2s ease,
@@ -180,7 +179,7 @@
 
 .pricing-button:hover {
   transform: translateY(-2px);
-  background: var(--color-deep-blue);
+  background: var(--color-brand-dark);
 }
 
 @media (max-width: 950px) {

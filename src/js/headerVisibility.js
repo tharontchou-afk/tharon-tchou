@@ -2,20 +2,18 @@ const header = document.querySelector("#site-header");
 const hero = document.querySelector("#hero");
 
 if (header && hero) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const entry = entries[0];
+  const toggleHeader = () => {
+    const heroBottom = hero.getBoundingClientRect().bottom;
 
-      if (entry.isIntersecting) {
-        header.classList.remove("is-visible");
-      } else {
-        header.classList.add("is-visible");
-      }
-    },
-    {
-      threshold: 0.1,
-    },
-  );
+    if (heroBottom <= 80) {
+      header.classList.add("is-visible");
+    } else {
+      header.classList.remove("is-visible");
+    }
+  };
 
-  observer.observe(hero);
+  window.addEventListener("scroll", toggleHeader);
+  window.addEventListener("resize", toggleHeader);
+
+  toggleHeader();
 }

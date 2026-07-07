@@ -7,7 +7,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateY(-12px);
 
   transition:
     opacity 0.25s ease,
@@ -19,7 +18,16 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateY(0);
+}
+
+@media (min-width: 641px) {
+  .site-header {
+    transform: translateY(-12px);
+  }
+
+  .site-header.is-visible {
+    transform: translateY(0);
+  }
 }
 
 .header-actions {
@@ -30,11 +38,11 @@
   width: 280px;
   padding: 0.5rem;
 
-  background: rgba(255, 248, 236, 0.86);
+  background: var(--color-bg-filter);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(18, 49, 66, 0.12);
+  border: var(--border-brand);
   border-radius: 999px;
-  box-shadow: 0 14px 40px rgba(18, 49, 66, 0.16);
+  box-shadow: var(--shadow-brand-dark);
 
   transition: border-radius 0.25s ease;
 }
@@ -67,8 +75,8 @@
   border: none;
   border-radius: 50%;
 
-  background: var(--color-deep-blue);
-  color: var(--color-cream);
+  background: var(--color-brand-dark);
+  color: var(--color-bg);
 
   cursor: pointer;
   transition:
@@ -78,7 +86,7 @@
 
 .button-menu:hover {
   transform: scale(1.04);
-  background: var(--color-green);
+  background: var(--color-accent-green);
 }
 
 .icon-menu {
@@ -97,7 +105,7 @@
 
   border-radius: 999px;
 
-  background: var(--color-yellow);
+  background: var(--color-accent-yellow);
   color: #fff;
 
   font-weight: 800;
@@ -110,7 +118,7 @@
 
 .ticket-link:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(221, 166, 53, 0.32);
+  box-shadow: var(--shadow-yellow);
 }
 
 .menu-wrapper {
@@ -136,16 +144,12 @@
   padding: 0.8rem 1rem;
   border-radius: 0.9rem;
 
-  color: var(--color-deep-blue);
+  color: var(--color-brand-dark);
   font-weight: 700;
 }
 
 .menu-dropdown a:hover {
-  background: rgba(221, 166, 53, 0.18);
-}
-
-.menu-dropdown a:hover {
-  background: rgba(221, 166, 53, 0.16);
+  background: var(--color-accent-yellow-hover);
 }
 
 .menu-wrapper:hover .menu-dropdown,
@@ -155,20 +159,30 @@
 
 @media (max-width: 640px) {
   .site-header {
-    top: 0;
-    right: auto;
+    position: fixed;
+    top: env(safe-area-inset-top, 0px);
     left: 0;
-
+    right: 0;
     width: 100%;
+
+    transform: none;
+  }
+
+  .site-header.is-visible {
+    transform: none;
+  }
+
+  .header-actions {
+    padding-top: calc(0.5rem + env(safe-area-inset-top, 0px));
   }
 
   .header-actions {
     width: 100%;
     border-radius: 0;
 
-    background: rgba(255, 248, 236, 0.92);
-    border-bottom: 1px solid rgba(18, 49, 66, 0.12);
-    box-shadow: 0 8px 24px rgba(18, 49, 66, 0.12);
+    background: var(--color-bg-filter);
+    border-bottom: var(--border-brand);
+    box-shadow: var(--shadow-brand-dark);
   }
 
   .header-actions-top {
