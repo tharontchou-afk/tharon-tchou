@@ -118,6 +118,13 @@
   margin: 0;
 }
 
+.footer-link.is-current {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: default;
+  text-decoration: none;
+}
+
 @media (max-width: 950px) {
   .footer-content {
     grid-template-columns: repeat(2, 1fr);

@@ -1,0 +1,207 @@
+.ticket-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--color-bg-filter);
+  backdrop-filter: blur(14px);
+  border-bottom: var(--border-brand);
+}
+
+.ticket-nav {
+  width: min(100% - 2rem, var(--container-width));
+  min-height: var(--header-height);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-link {
+  color: var(--color-brand-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ticket-link:hover {
+  color: var(--color-brand-primary);
+}
+
+.booking-page {
+  background:
+    radial-gradient(
+      circle at top left,
+      var(--color-surface-alt-gradient),
+      transparent 34rem
+    ),
+    var(--color-bg);
+  color: var(--color-text);
+}
+
+.booking-hero {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.booking-hero .section-kicker {
+  margin: 0;
+  color: var(--color-accent-red);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+}
+
+.booking-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--color-brand-dark);
+  font-size: clamp(2.3rem, 6vw, 4.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.booking-hero p {
+  max-width: 660px;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.btn-disabled {
+  width: fit-content;
+  margin-top: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.95rem 1.35rem;
+  background: var(--color-surface-alt);
+  color: var(--color-muted);
+  border: var(--border-brand);
+  font-weight: 800;
+  cursor: not-allowed;
+  box-shadow: var(--shadow-brand-dark);
+}
+
+.booking-info {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+  padding: 0 0 clamp(4rem, 8vw, 6rem);
+}
+
+.booking-info h2 {
+  margin: 0 0 1.25rem;
+  color: var(--color-brand-dark);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.booking-info ul {
+  max-width: 760px;
+  margin: 0;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.9rem;
+  list-style: none;
+  background: var(--color-surface);
+  border: var(--border-brand);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-brand-dark);
+}
+
+.booking-info li {
+  position: relative;
+  padding-left: 1.7rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.booking-info li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--color-accent-yellow);
+}
+
+.booking-steps {
+  padding: 0 0 clamp(4rem, 8vw, 6rem);
+  background: var(--color-bg);
+}
+
+.booking-steps-content {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+}
+
+.booking-steps .section-kicker {
+  margin: 0 0 0.75rem;
+  color: var(--color-accent-red);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+}
+
+.booking-steps h2 {
+  max-width: 720px;
+  margin: 0 0 2rem;
+  color: var(--color-brand-dark);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.step-card {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: var(--border-brand);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-brand-dark);
+}
+
+.step-number {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-accent-yellow);
+  color: var(--color-brand-dark);
+  font-weight: 900;
+}
+
+.step-card h3 {
+  margin: 0 0 0.65rem;
+  color: var(--color-brand-dark);
+  font-size: 1.2rem;
+}
+
+.step-card p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card {
+    padding: 1.25rem;
+  }
+}
