@@ -13,11 +13,20 @@
 
   --color-brand-primary: #1f6f8b;
   --color-brand-dark: #123142;
+  --color-brand-dark-gradient: #17465c;
   --color-accent-red: #a7352a;
   --color-accent-yellow: #dca543;
   --color-accent-yellow-hover: rgba(220, 164, 67, 0.32);
   --color-accent-green: #0b7672;
   --color-accent-orange: #c86628;
+
+  --color-heading: var(--color-brand-dark);
+  --color-heading-soft: var(--color-brand-dark);
+  --color-on-dark: var(--color-bg);
+  --color-on-dark-accent: var(--color-surface-alt);
+
+  --color-text-on-light: var(--color-brand-dark);
+  --color-text-on-accent: var(--color-brand-dark);
 
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
@@ -26,6 +35,7 @@
   --border-soft: 1px solid rgba(255, 248, 236, 0.18);
   --border-brand: 1px solid rgba(18, 49, 66, 0.08);
   --border-light: 1px solid rgba(255, 255, 255, 0.45);
+  --border-on-dark-bg: var(--border-soft);
 
   --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.12);
   --shadow-red: 0 14px 32px rgba(167, 53, 42, 0.24);
@@ -48,13 +58,23 @@
     --color-text: #f3f4f6;
     --color-muted: #a8b3c2;
     --color-on-img-bg: rgba(54, 52, 49, 0.62);
-    --color-on-bg: rgba(54, 52, 49, 0.12);
+    --color-on-bg: rgba(255, 248, 236, 0.12);
     --color-soft: rgba(36, 74, 94, 0.75);
 
     --color-brand-primary: #38a6c7;
-    --color-brand-dark: #e6ebf5;
+    --color-brand-dark: /*#e6ebf5*/ #123142;
+    --color-brand-dark-gradient: /*#7dcff5 #dee8fa*/ #17465c;
+
+    --color-heading: #d8e4ef;
+    --color-heading-soft: #bfd1e0;
+
+    --color-text-on-light: #123142;
+    --color-text-on-accent: #102637;
+    --color-on-dark: #fff8ec;
+    --color-on-dark-accent: #f5ead8;
+
     --color-accent-red: #e06a5f;
-    --color-accent-yellow: #f0bd5b;
+    --color-accent-yellow: #f0bd5b; /*#f0bd5b*/
     --color-accent-yellow-hover: rgba(240, 189, 91, 0.32);
     --color-accent-green: #2dd4bf;
     --color-accent-orange: #f08a45;
@@ -62,6 +82,7 @@
     --border-soft: 1px solid rgba(54, 52, 49, 0.18);
     --border-brand: 1px solid rgba(223, 237, 242, 0.08);
     --border-light: 1px solid rgba(16, 38, 55, 0.45);
+    --border-on-dark-bg: 1px solid rgba(255, 248, 236, 0.18);
 
     --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.35);
     --shadow-red: 0 14px 32px rgba(224, 106, 95, 0.24);

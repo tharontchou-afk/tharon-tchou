@@ -30,7 +30,7 @@
 .legal-title {
   margin: 0 0 2rem;
 
-  color: var(--color-brand-dark);
+  color: var(--color-heading);
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -62,11 +62,6 @@
 
 .legal-list li + li {
   margin-top: 0.35rem;
-}
-
-.legal-text b,
-.legal-list b {
-  color: var(--color-brand-dark);
 }
 
 .legal-section a {

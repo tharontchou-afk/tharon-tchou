@@ -24,7 +24,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tharontchou.fr/" />
-    <meta property="og:image" content="https://tharontchou.fr/og-img.png" />
+    <meta property="og:image" content="https://tharontchou.fr/og-img.webp" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -35,7 +35,7 @@
       name="twitter:description"
       content="Circuit, horaires, tarifs et informations pratiques du petit train touristique de Tharon-Plage."
     />
-    <meta name="twitter:image" content="https://tharontchou.fr/og-img.png" />
+    <meta name="twitter:image" content="https://tharontchou.fr/og-img.webp" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
@@ -83,7 +83,7 @@
       <section id="hero" class="hero">
         <div class="hero-bg-wrapper" id="hero-bg">
           <img
-            src="/src/assets/images/hero-visuel.png"
+            src="/src/assets/images/hero-visuel.webp"
             alt=""
             class="hero-bg-img"
             aria-hidden="true"
@@ -111,9 +111,9 @@
       <section id="quick-info" class="quick-info">
         <div class="quick-info-content" id="quick-info-content">
           <ul class="quick-info-list">
-            <li class="quick-info-item">Balade audio-guidée</li>
+            <li class="quick-info-item">Balade audio-guidée immersive</li>
             <li class="quick-info-item">Environ 45min</li>
-            <li class="quick-info-item">Départ à Tharon-Plage</li>
+            <li class="quick-info-item">Départ Jardin du Mail</li>
             <li class="quick-info-item">Idéal familles et vacanciers</li>
             <li class="quick-info-item">Billets en ligne</li>
           </ul>
@@ -139,7 +139,7 @@
                 <article class="experience-card is-active">
                   <div class="experience-card-image">
                     <img
-                      src="/src/assets/images/experience.png"
+                      src="/src/assets/images/experience.webp"
                       alt="description"
                     />
                   </div>
@@ -157,7 +157,7 @@
                 <article class="experience-card">
                   <div class="experience-card-image">
                     <img
-                      src="/src/assets/images/famille.png"
+                      src="/src/assets/images/famille.webp"
                       alt="description"
                     />
                   </div>
@@ -174,7 +174,7 @@
                 <article class="experience-card">
                   <div class="experience-card-image">
                     <img
-                      src="/src/assets/images/decouverte.png"
+                      src="/src/assets/images/decouverte.webp"
                       alt="description"
                     />
                   </div>
@@ -191,7 +191,10 @@
 
                 <article class="experience-card">
                   <div class="experience-card-image">
-                    <img src="/src/assets/images/audio.png" alt="description" />
+                    <img
+                      src="/src/assets/images/audio.webp"
+                      alt="description"
+                    />
                   </div>
                   <div class="experience-card-body">
                     <span class="experience-card-kicker">Audio-guide</span>
@@ -249,20 +252,20 @@
 
               <ul class="route-info-list">
                 <li class="route-info-item"><b>Durée :</b> environ 1 heure</li>
-                <li class="route-info-item"><b>Départ :</b> Tharon-Plage</li>
+                <li class="route-info-item"><b>Départ :</b> Jardin du Mail</li>
                 <li class="route-info-item">
                   <b>Parcours :</b> plages, commerces, animations et lieux
                   emblématiques
                 </li>
                 <li class="route-info-item">
-                  <b>Expérience :</b> balade audio-guidée avec anecdotes locales
+                  <b>Expérience :</b> balade audio-guidée immersive
                 </li>
               </ul>
             </div>
 
             <div class="route-map-card">
               <img
-                src="./src/assets/images/carte-tharon-tchou.png"
+                src="./src/assets/images/carte-tharon-tchou.webp"
                 alt="Carte du trajet du Tharon’Tchou"
               />
 
@@ -271,9 +274,10 @@
           </div>
         </div>
       </section>
+
       <section id="tarifs" class="pricing-section">
         <div class="pricing-content">
-          <div class="section-heading pricing-heading">
+          <header class="section-heading pricing-heading">
             <span class="section-kicker">Tarifs</span>
 
             <h2 class="section-title">
@@ -284,58 +288,126 @@
               Billet simple, pass journée ou pass semaine : profitez du
               Tharon’Tchou selon votre programme et votre rythme.
             </p>
+          </header>
+
+          <div class="pricing-group">
+            <header class="pricing-group-heading">
+              <span class="section-kicker">Pour un voyage immersif</span>
+              <h3 class="pricing-group-title">Billet simple</h3>
+              <p class="pricing-group-intro">
+                Une balade complète à bord du Tharon’Tchou.
+              </p>
+            </header>
+
+            <div class="pricing-grid-single">
+              <article class="price-card">
+                <h4>Adulte</h4>
+                <p class="price-amount">7 €</p>
+                <p class="price-note">Pour une balade audio-guidée.</p>
+                <p class="price-age">À partir de 12 ans</p>
+              </article>
+
+              <article class="price-card">
+                <h4>Enfant</h4>
+                <p class="price-amount">5 €</p>
+                <p class="price-note">
+                  Tarif enfant pour profiter du trajet en famille.
+                </p>
+                <p class="price-age">De 3 à 11 ans</p>
+              </article>
+
+              <article class="price-card price-card-soft">
+                <h4>Moins de 3 ans</h4>
+                <p class="price-amount">Gratuit</p>
+                <p class="price-note">
+                  Sous réserve des conditions précisées en billetterie.
+                </p>
+              </article>
+            </div>
           </div>
 
-          <div class="pricing-grid">
-            <article class="price-card">
-              <span class="price-label">Billet simple</span>
-              <h3>Adulte</h3>
-              <p class="price-amount">7 €</p>
-              <p class="price-note">Pour une balade audio-guidée.</p>
-            </article>
-
-            <article class="price-card price-card-featured">
-              <span class="price-label">Pass journée</span>
-              <h3>Adulte</h3>
-              <p class="price-amount">9 €</p>
-              <p class="price-note">
-                Idéal pour monter et redécouvrir le parcours dans la journée.
+          <div class="pricing-group">
+            <header class="pricing-group-heading">
+              <span class="section-kicker">Montez à volonté</span>
+              <h3 class="pricing-group-title">Les pass</h3>
+              <p class="pricing-group-intro">
+                Plusieurs trajets pendant la durée de validité du pass.
               </p>
-            </article>
+            </header>
 
-            <article class="price-card">
-              <span class="price-label">Pass semaine</span>
-              <h3>Adulte</h3>
-              <p class="price-amount">24 €</p>
-              <p class="price-note">
-                Une formule pratique pour les séjours à Tharon-Plage.
-              </p>
-            </article>
+            <section class="pricing-offer" aria-labelledby="pass-journee-title">
+              <h4 id="pass-journee-title" class="price-label">Pass journée</h4>
 
-            <article class="price-card">
-              <span class="price-label">Billet simple</span>
-              <h3>Enfant</h3>
-              <p class="price-amount">5 €</p>
-              <p class="price-note">
-                Tarif enfant pour profiter du trajet en famille.
-              </p>
-            </article>
+              <div class="pricing-grid-pass">
+                <article class="price-card price-card-featured">
+                  <h5>Adulte</h5>
+                  <p class="price-amount">9 €</p>
+                  <p class="price-note">
+                    Idéal pour monter et redécouvrir le parcours dans la
+                    journée.
+                  </p>
+                  <p class="price-age">À partir de 12 ans</p>
+                </article>
 
-            <article class="price-card price-card-soft">
-              <span class="price-label">Tout-petits</span>
-              <h3>Moins de 3 ans</h3>
-              <p class="price-amount">Gratuit</p>
-              <p class="price-note">
-                Sous réserve des conditions précisées en billetterie.
-              </p>
-            </article>
+                <article class="price-card price-card-featured">
+                  <h5>Enfant</h5>
+                  <p class="price-amount">7 €</p>
+                  <p class="price-note">
+                    Une formule souple pour profiter du train en famille.
+                  </p>
+                  <p class="price-age">De 3 à 11 ans</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="pricing-offer" aria-labelledby="pass-semaine-title">
+              <h4 id="pass-semaine-title" class="price-label">Pass semaine</h4>
+
+              <div class="pricing-grid-pass">
+                <article class="price-card">
+                  <h5>Adulte</h5>
+                  <p class="price-amount">24 €</p>
+                  <p class="price-note">
+                    Une formule pratique pour les séjours à Tharon-Plage.
+                  </p>
+                  <p class="price-age">À partir de 12 ans</p>
+                </article>
+
+                <article class="price-card">
+                  <h5>Enfant</h5>
+                  <p class="price-amount">16 €</p>
+                  <p class="price-note">
+                    Pour profiter librement du parcours pendant le séjour.
+                  </p>
+                  <p class="price-age">De 3 à 11 ans</p>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <div class="pricing-group">
+            <header class="pricing-group-heading">
+              <span class="section-kicker">Offre spéciale</span>
+              <h3 class="pricing-group-title">Billet simple</h3>
+              <p class="pricing-group-intro">Évènements saisonniers</p>
+            </header>
+            <div class="pricing-grid-market">
+              <article class="price-card price-card-soft">
+                <h4>Jours de marché</h4>
+                <p class="price-amount">3 €</p>
+                <p class="price-note">Tarif unique pour tout le monde</p>
+                <p class="price-note">
+                  Toujours gratuit pour les moins de 3 ans
+                </p>
+              </article>
+            </div>
           </div>
 
           <div class="pricing-action">
             <p>
-              Tarif réduit : -10 % sur présentation d’un justificatif. Le
-              parcours détaillé, les horaires et les conditions d’embarquement
-              seront confirmés avant l’ouverture.
+              Tarif réduit : -10 % sur présentation d’un justificatif. Les
+              horaires et les conditions d’embarquement sont précisés sur la
+              billetterie.
             </p>
 
             <a href="./billetterie.html" class="pricing-button">

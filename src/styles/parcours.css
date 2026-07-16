@@ -4,10 +4,14 @@
   background:
     radial-gradient(
       circle at top left,
-      rgba(245, 234, 216, 0.18),
+      var(--color-surface-alt-gradient),
       transparent 32rem
     ),
-    linear-gradient(135deg, var(--color-brand-dark), #17465c);
+    linear-gradient(
+      135deg,
+      var(--color-brand-dark),
+      var(--color-brand-dark-gradient)
+    );
 }
 
 .route-content {
@@ -30,7 +34,7 @@
   margin-bottom: 0.8rem;
 
   color: var(--color-accent-yellow);
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 4vw, 2rem);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -39,7 +43,7 @@
 .route-section .section-title {
   margin: 0;
 
-  color: var(--color-bg);
+  color: var(--color-on-dark);
   font-size: clamp(2.2rem, 4vw, 3.8rem);
   line-height: 1.08;
   font-weight: 800;
@@ -48,7 +52,7 @@
 .route-section .section-intro {
   margin: 1.3rem 0 0;
 
-  color: var(--color-surface-alt);
+  color: var(--color-on-dark-accent);
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   line-height: 1.7;
 }
@@ -57,8 +61,8 @@
   margin: 1rem 0 0;
   padding: 1rem 1.1rem;
 
-  color: var(--color-brand-dark);
-  background: var(--color-surface-alt);
+  color: var(--color-text-on-light);
+  background: var(--color-on-dark-accent);
   border-radius: 1rem;
 
   font-size: 0.95rem;
@@ -81,7 +85,7 @@
   border: var(--border-soft);
   border-radius: 1rem;
 
-  color: var(--color-surface-alt);
+  color: var(--color-on-dark-accent);
   line-height: 1.5;
 }
 
@@ -113,7 +117,7 @@
 .route-map-caption {
   margin: 0.6rem 0 clamp(1rem, 3vw, 3.125rem);
 
-  color: var(--color-brand-dark);
+  color: var(--color-heading);
   font-size: 0.85rem;
   line-height: 1.4;
   text-align: center;

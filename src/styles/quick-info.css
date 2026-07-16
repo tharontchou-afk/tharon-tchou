@@ -29,7 +29,7 @@
   text-align: center;
 
   background: var(--color-surface-alt);
-  color: var(--color-brand-dark);
+  color: var(--color-heading);
 
   border-radius: 1.25rem;
   box-shadow: var(--shadow-soft);

@@ -20,6 +20,18 @@
     <meta property="og:image" content="https://tharontchou.fr/og-img.png" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://pretix.eu/tharontchou/saison-2026/widget/v2.css"
+      crossorigin
+    />
+    <script
+      type="text/javascript"
+      src="https://pretix.eu/widget/v2.fr.js"
+      async
+      crossorigin
+    ></script>
   </head>
   <body>
     <header class="ticket-header">
@@ -31,21 +43,17 @@
       <section class="booking-hero">
         <p class="section-kicker">Billetterie</p>
         <h1>Réserver votre trajet à bord du Tharon’Tchou</h1>
-        <p>
+        <!--<p>
           La billetterie en ligne est en cours de préparation. Elle permettra
           bientôt de choisir votre date, votre horaire de départ et vos billets.
-        </p>
-
-        <span class="btn btn-disabled" aria-disabled="true">
-          Réservation bientôt disponible
-        </span>
+        </p>-->
       </section>
 
       <section class="booking-steps" aria-labelledby="booking-steps-title">
         <div class="booking-steps-content">
           <p class="section-kicker">Réservation en ligne</p>
 
-          <h2 id="booking-steps-title">Comment ça fonctionnera&nbsp;?</h2>
+          <h2 id="booking-steps-title">Comment ça fonctionne&nbsp;?</h2>
 
           <div class="steps-grid">
             <article class="step-card">
@@ -72,6 +80,41 @@
                 Le billet et son QR code seront contrôlés avant l’embarquement.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="booking-widget-section"
+        aria-labelledby="booking-widget-title"
+      >
+        <div class="booking-widget-content">
+          <p class="section-kicker">Réservation sécurisée</p>
+
+          <h2 id="booking-widget-title">Choisissez vos billets</h2>
+
+          <p>
+            Après validation vous serez redirigé sur une page de paiement
+            sécurisée.
+          </p>
+
+          <div class="booking-widget">
+            <pretix-widget
+              event="https://pretix.eu/tharontchou/saison-2026/"
+            ></pretix-widget>
+            <noscript>
+              <div class="pretix-widget">
+                <div class="pretix-widget-info-message">
+                  JavaScript est désactivé dans votre navigateur. Pour accéder à
+                  notre billetterie sans JavaScript, veuillez
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://pretix.eu/tharontchou/saison-2026/"
+                    >cliquer ic</a
+                  >.
+                </div>
+              </div>
+            </noscript>
           </div>
         </div>
       </section>

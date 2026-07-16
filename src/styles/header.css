@@ -75,7 +75,7 @@
   border: none;
   border-radius: 50%;
 
-  background: var(--color-brand-dark);
+  background: var(--color-heading);
   color: var(--color-bg);
 
   cursor: pointer;
@@ -144,7 +144,7 @@
   padding: 0.8rem 1rem;
   border-radius: 0.9rem;
 
-  color: var(--color-brand-dark);
+  color: var(--color-heading);
   font-weight: 700;
 }
 
