@@ -129,6 +129,53 @@
   background: var(--color-accent-yellow);
 }
 
+.booking-steps-intro {
+  max-width: 720px;
+  margin: 0 0 2rem;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.7;
+}
+
+.booking-schedule-card {
+  margin: 0 0 2rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  background: var(--color-surface);
+  border: var(--border-brand);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-brand-dark);
+}
+
+.booking-schedule-card h3 {
+  margin: 0 0 1rem;
+  color: var(--color-heading);
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+}
+
+.departure-times {
+  margin: 0 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.departure-times li {
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: var(--color-accent-yellow);
+  color: var(--color-text-on-accent);
+  font-weight: 900;
+}
+
+.booking-schedule-card p {
+  max-width: 680px;
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
 .booking-steps {
   padding: 0 0 clamp(4rem, 8vw, 6rem);
   background: var(--color-bg);
